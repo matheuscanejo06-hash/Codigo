@@ -16,7 +16,11 @@ elif operacao == "2":
 elif operacao == "3":
     resultado = num1 * num2
 elif operacao == "4":
-    resultado = num1 + num2   # ERRO de propósito
+    if num2 != 0:
+        resultado = num1 / num2
+    else:
+        print("Erro: Divisão por zero não é permitida.")
+        resultado = None
 else:
     print("Operação inválida")
     resultado = None
